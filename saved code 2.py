@@ -200,7 +200,7 @@ gray=cv.cvtColor(img, cv.COLOR_BGR2GRAY)   # to make image greyscale
 cv.imshow('Gray',gray)
 
 
-blur=cv.GaussianBlur(img,(9,9),cv.BORDER_DEFAULT)  #to blur an image, the (3,3) reps the kernel size with must be an odd number
+blur=cv.GaussianBlur(img,(9,9),cv.BORDER_DEFAULT)  #to blur an image, the (3,3) reps the kernel size which must be an odd number
 cv.imshow('Blur',blur)
 
 
@@ -220,7 +220,7 @@ cv.imshow('Eroded', eroded)
 #the dilate and erode methods are methods used to edit the image
 
 
-resized= cv.resize(img,(500,500), interpolation=cv.INTER_AREA)#the cv.INTER_AREA is ore suitable for resizing images to a smaller scale
+resized= cv.resize(img,(500,500), interpolation=cv.INTER_AREA)#the cv.INTER_AREA is more suitable for resizing images to a smaller scale
                                                               #to resize to bigger scales, cv.INTER_LINEAR or cv.INTER_CUBIC
                                                               #the cv.INTER_CUBIC is slower, but the resulting image is of more quality
                                                               #method is to resize image by defining the boundary lenght and width
@@ -229,7 +229,7 @@ cv.imshow('Resized', resized)
 
 
 
-cropped=img[50:200,200:400]  #to crop out a specifc part of the image by state the boundary coordinate of the image
+cropped=img[50:200,200:400]  #to crop out a specifc part of the image by stating the boundary coordinate of the image
 cv.imshow('Cropped', cropped)
 
 
